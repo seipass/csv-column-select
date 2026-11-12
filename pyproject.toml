@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csv-column-select"
+version = "1.0.0"
+description = "Select specified columns from each CSV row."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+authors = [{name = "seipass"}]
+
+[project.scripts]
+csv-column-select = "csv_column_select:main"
+
+[tool.setuptools]
+py-modules = ["csv_column_select"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
